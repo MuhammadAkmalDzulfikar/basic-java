@@ -33,9 +33,14 @@ const suhu = prompt ('masukkan suhu = ')
 const fahrenheit = (suhu*(9/5))+32;
 console.log(`suhu fahrenheit adalah ${fahrenheit}`)
 
-//menghitung kembalian dari total
+//aplikasi sederhana menghitung uang kembalian dari total telur
 
-const telurperkg = 28000;
-const hargatelur = 25
-const totalbayr = jumlahtelur - 
-const kembalian = totalbayar
+var hargaPerKg = 28000;
+var jumlahTelur = prompt("Masukkan jumlah telur (kg):");
+var uangDibayar = prompt("Masukkan total uang yang dibayarkan:");
+var totalHarga = jumlahTelur * hargaPerKg;
+var uangKembalian = uangDibayar - totalHarga;
+
+console.log("Jumlah Telur (kg): " + jumlahTelur);
+console.log("Total Bayar: Rp" + totalHarga);
+console.log("Uang Kembalian: Rp" + uangKembalian);
